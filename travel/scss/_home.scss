@@ -4,6 +4,44 @@ body {
 	font-family: Lato;
 }
 
+:root {
+  --theme-color: #44edbc;
+}
+.title {
+  font-weight: bold;
+    color: #09436d;
+    width:  100%;
+    margin-bottom:  30px;
+    h1 {
+      font-weight: bold;
+    color: #09436d;
+    }
+
+  > img {
+    width: 144px;
+    margin-top: -20px;
+    }
+
+    p {
+      font-size: 18px;
+    font-weight: 400;
+    color: #9e9e9e;
+    }
+}
+
+.f_center {
+  align-items: center;
+}
+
+
+.btn.btn-default {
+    border: 1px solid #eaeff5;
+    background: #fff;
+    color: #677897;
+    font-size: 14px;
+}
+
+
 .por {
   position: relative;
 }
@@ -54,13 +92,6 @@ body {
 	padding-bottom: 100px;
 }
 
-.content-container {
-	width: 100%;
-	    height: 100%;
-	    display: flex;
-	    color: #fff;
-	    align-items: center;
-}
 
 
 
@@ -89,14 +120,6 @@ body {
     -webkit-filter: hue-rotate(-360deg);
   }
 }
-
-.heading {
-	margin-bottom: 50px;
-	font-size: 50px;
-	// font-family: myfont;
-	width: 100%;
-}
-
 
 
 .word {
@@ -269,8 +292,9 @@ body {
   }
   h3 {
     // font-family: myfont1;
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
+    font-weight: 400;
 
   }
   span {
@@ -286,8 +310,23 @@ body {
         align-items: center;
         justify-content: space-between;
         width: 100%;
+
+        time:before {
+          content: "\e99f";
+
+    font-family: bee-icon;
+    margin-right: 1px;
+    position: relative;
+    top: 2px;
+    font-size: 20px;
+        }
     }
 }
+.swiper-pagination-white .swiper-pagination-bullet-active {
+    background: var(--theme-color);
+        box-shadow: 0 0 1px 3px #44edbc3d;
+}
+
 
 .width100 {
   width: 100%;
@@ -344,6 +383,50 @@ body {
 }
 
 .rating-star {
-  width: 130px !important;
+  width: 105px !important;
     margin-bottom: 0;
+}
+
+.top-banner-sm {
+  width: 100%;
+  height: 400px;
+  position: relative;
+
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .overlay-sm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000029;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+.book-form {
+      border: 1px solid #f0f3f7;
+      padding: 15px;
+}
+
+.gallery-img-list  {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  li {
+   flex-grow: 1;
+   margin: 5px auto;
+  }
+}
+
+.bg-transprent .navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+.frem-text .btn {
+  margin-top: 20px;
 }

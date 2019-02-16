@@ -1,3 +1,26 @@
+   var swiper = new Swiper('.swiper-container.review', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    parallax: true,
+    freeMode: true,
+      
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+     navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+  });
+
+     $('.faq-header').click(function () {
+          $(this).closest('.faq-box').toggleClass('active').children('.faq-body').slideToggle();
+          
+        });
+        $('.faq-box.active .faq-body').slideDown();
+    
+     
 
  var swiper = new Swiper('.swiper-container.swiper-cta', {
       slidesPerView: 'auto',
@@ -24,6 +47,7 @@
         clickable: true,
       },
     });
+
 
 
 $('.water-ripple').ripples({
@@ -103,6 +127,7 @@ setInterval(changeWord, 4000);
  var swiper = new Swiper('.swiper-container.slider1', {
       speed: 600,
       parallax: true,
+      loop: true,
        slidesPerView: 5,
       spaceBetween: 5,
       centeredSlides: true,
@@ -115,6 +140,7 @@ setInterval(changeWord, 4000);
  var swiper = new Swiper('.swiper-container.slider2', {
       speed: 600,
       parallax: true,
+      loop: true,
        slidesPerView: 5,
       spaceBetween: 5,
       centeredSlides: true,
@@ -124,3 +150,13 @@ setInterval(changeWord, 4000);
       },
       
     });
+
+
+
+
+
+new WOW().init();
+$('.auto-animate .wow').each(function(a) {
+    $(this).attr('data-wow-delay', `${(a / 10) * 1.5}s`);
+});
+      

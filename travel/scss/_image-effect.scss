@@ -27,7 +27,7 @@
 	position: relative;
 	float: left;
 	overflow: hidden;
-	background: #3085a3;
+	background: #000255ba;
 	text-align: center;
 	cursor: pointer;
 	width: 100%;
@@ -49,6 +49,13 @@
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
 }
 
 .grid figure figcaption::before,
@@ -56,14 +63,6 @@
 	pointer-events: none;
 }
 
-.grid figure figcaption,
-.grid figure figcaption > a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
@@ -115,14 +114,6 @@ figure.effect-lily figcaption {
 	text-align: left;
 }
 
-figure.effect-lily figcaption > div {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	padding: 2em;
-	width: 100%;
-	height: 50%;
-}
 
 figure.effect-lily h2,
 figure.effect-lily p {
@@ -450,7 +441,7 @@ figure.effect-layla {
 }
 
 figure.effect-layla img {
-	height: 390px;
+	height: 110%;
 }
 
 figure.effect-layla figcaption {
@@ -626,8 +617,7 @@ figure.effect-oscar img {
 }
 
 figure.effect-oscar figcaption {
-	padding: 3em;
-	background-color: rgba(58,52,42,0.7);
+	background-color: rgba(58, 52, 42, 0.09);
 	-webkit-transition: background-color 0.35s;
 	transition: background-color 0.35s;
 }

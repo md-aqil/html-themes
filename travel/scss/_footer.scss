@@ -61,7 +61,7 @@ footer {
     transform: translateY(-50%);
 }
 .footer-widget-title {
-    color: #a49878;
+    color: var(--theme-color);
     margin-bottom: 35px;
     text-transform: capitalize;
     font-weight: 800;
@@ -76,7 +76,7 @@ footer {
     border-bottom: 1px solid #484956;
 }
 .twitter-post .twiter-post-title a {
-    color: #a49878;
+    color: var(--theme-color);
     display: flex;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -105,7 +105,7 @@ footer {
 }
 .news-letter-title {
     font-size: 20px;
-    color: #a49878;
+    color: var(--theme-color);
 }
 
 .news-letter-form form {
@@ -114,36 +114,10 @@ footer {
     overflow: hidden;
 }
 
-.news-letter-form input[type="email"] {
-    background: #fff none repeat scroll 0 0;
-    border: 1px solid #fff;
-    color: #a49878;
-    padding: 10px 63px 10px 20px;
-    text-transform: capitalize;
-    width: 100%;
-}
-.news-letter-form button {
-    background: #a49878 none repeat scroll 0 0;
-    color: #fff;
-    padding: 12px 24px;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.news-letter-form button i {
-    border: none;
-    margin-right: 0;
-    color: #fff;
-}
+
 .footer-social-profile ul li a i {
-    color: #fff;
-    height: 25px;
-    line-height: 25px;
-    margin-right: 10px;
-    text-align: center;
-    width: 25px;
-    transition: all 0.4s ease-in-out 0s;
-    background: #a49878;
+    color: #383949;
+   
 }
 
 .footer-recent-inner h4 a {
@@ -172,7 +146,8 @@ footer {
 }
 
 .footer-recent-inner span {
-    color: #a49878;
+    color: var(--theme-color);
     font-size: 14px;
     text-transform: capitalize;
 }
+
