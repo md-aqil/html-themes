@@ -9,7 +9,11 @@
 footer {
     background: #383949 none repeat scroll 0 0;
 }
-
+.footer-widget-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 .footer-logo {
     margin-bottom: 30px;
     display: inline-block;
