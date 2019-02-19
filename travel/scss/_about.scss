@@ -46,9 +46,11 @@
 }
 .swipe-user img {
 	width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		border: 3px solid red;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-top: -2px;
+        box-shadow: 0 0 10px #00000029;
 }
 
 .faq-box {
@@ -92,4 +94,156 @@
     position: absolute;
     right: 10px;
     top: 20px;
+}
+
+.service-item i {
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    line-height: 72px;
+    vertical-align: middle;
+    position: relative;
+    z-index: 3;
+}
+
+.service-item [class^="bee-icon-"]:before, .service-item [class*=" bee-icon-"]:before {
+    font-size: 36px;
+    color: var(--theme-color);
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.service-item .icon {
+    display: block;
+    position: relative;
+    margin: 0 0 20px;
+}
+
+
+
+
+  
+
+
+
+.service-item .icon::before {
+     --color: rgb(68, 237, 188);
+    width: 80px;
+    height: 80px;
+     background-color:  var(--theme-color);
+    border-radius: 0 80px 80px 80px;
+    opacity: 0.3;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    z-index: 1;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.service-item:hover .icon::before {
+    background: var(--theme-color);
+    opacity: 1;
+}
+
+.service-item:hover .icon i::before {
+    color: #fff;
+}
+
+.service-item {
+    h3 {
+          font-size: 20px;
+        font-weight: bold;
+        color: #09436d;
+    }
+  p {
+    color: #8f8f8f;
+        line-height: 1.4;
+        font-size: 16px;
+  }
+}
+
+.service-item {
+    margin-top: 60px;
+}
+
+.review {
+    .swiper-button-next, .swiper-button-prev {
+       border: 1px solid #9fcdfe;
+           background-size: 44%;
+           border-radius: 50%;
+           width: 40px;
+           height: 40px;
+           padding: 7px;
+           filter: hue-rotate(-433deg);
+    }
+}
+
+.faq-header {
+    font-size: 20px;
+        color: #09436c;
+        padding: 15px 0;
+}
+
+.faq-box {
+    p {
+        color: #8f8f8f;
+            line-height: 1.7;
+            font-size: 16px;
+    }
+}
+
+.content-overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #00000005 58%, #00000057 67%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    color: #fff;
+}
+.content-overlay.transparent {
+    background: transparent;
+}
+.month {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    li {
+      flex-grow: 1;
+          flex-basis: 200px;
+          flex-grow: 1;
+          flex-basis: 200px;
+          font-size: 20px;
+          color: #09436d;
+          padding: 0 12px;
+          font-weight: bold;
+    }
+}
+
+.swipe-user {
+    .media-heading {
+       margin-bottom: 0;
+           color: #fff;
+           font-weight: bold;
+           font-size: 18px;
+    }
+    p {
+        color: #fff;
+    }
 }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Travel World</title>
+     <link rel="stylesheet" href="http://beeknock.com/tools/bee-icon/beeicon-font.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="css/output.css">
+  
+  <style>
+    #image-holder {
+      width: 100%;
+      height: 80vh;
+      background-size: 100%;
+      
+    }
+  </style>
+
+</head>
+
+  <body>
+  <div id="image-holder" style="background: url(img/travel-img/enjoy-summer.jpg);"></div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.ripples-min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/controller.js"></script>
+
+  <script>
+    var currentBackground = 0;
+
+    var backgrounds = 
+    [ 'img/travel-img/beach.jpg',
+      'img/travel-img/beach3.jpg', 
+      'img/travel-img/beach5.jpg'
+    ];
+
+    function changeBackground() {
+
+        currentBackground++;
+
+        if(currentBackground >= backgrounds.length) currentBackground = 0;
+
+        $('#image-holder').fadeOut(0,function() {
+            $('#image-holder').css({
+                'background-image' : "url('" + backgrounds[currentBackground] + "')"
+            });
+            $('#image-holder').fadeIn(1500);
+        });
+
+
+        setTimeout(changeBackground, 5000);
+    }
+
+    $(document).ready(function() {
+
+        setTimeout(changeBackground, 5000);  
+
+    });
+
+  </script>
+   
+  </body>
+</html>
