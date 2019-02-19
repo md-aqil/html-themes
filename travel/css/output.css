@@ -2607,4 +2607,71 @@ footer {
   color: #fff;
 }
 
+.swiper-container.blog .image-card {
+  width: 400px;
+  height: 500px;
+  position: relative;
+}
+
+.tag {
+  display: inline !important;
+  padding: 3px;
+  border-radius: 2px;
+  font-weight: 400 !important;
+  margin-top: -5px;
+  display: block;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #fff;
+  padding: 3px 6px;
+}
+
+.type_1 {
+  background: linear-gradient(150deg, #9C09DB, #1C0FD7);
+}
+
+.type_2 {
+  background: linear-gradient(150deg, #F2C314, #FC3832);
+}
+
+.type_3 {
+  background: linear-gradient(150deg, #32FBFC, #3214F2);
+}
+
+.type_4 {
+  background: linear-gradient(150deg, #2576FD, #1E98FE);
+}
+
+.type_5 {
+  background: linear-gradient(150deg, #FF9C51, #FFD46C);
+}
+
+.type_7 {
+  background: linear-gradient(150deg, #614AFE, #8776FE);
+}
+
+.type_9 {
+  background: linear-gradient(150deg, #29C182, #4BEAA4);
+}
+
+.type_6 {
+  background: linear-gradient(150deg, #DC8EF4, #A463EA);
+}
+
+.type_7 {
+  background: linear-gradient(150deg, #A0DDFF, #909AFD);
+}
+
+.type_8 {
+  background: linear-gradient(150deg, #D8D8D8, #15D8B4);
+}
+
+.blog-list .card {
+  margin-top: 20px;
+}
+.blog-list .card a {
+  color: #094971;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=output.css.map */

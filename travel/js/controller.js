@@ -63,7 +63,7 @@
 
    height:2,        
 
-   color:"#f66269",
+   color:"#44edbc",
      position:"bottom"
 
  });
@@ -86,6 +86,24 @@ $('#progress-bar').slideUp();
 
 
 
+
+
+
+   var swiper = new Swiper('.swiper-container.blog', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+  
+    freeMode: true,
+      
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+     navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+  });
 
 
 
