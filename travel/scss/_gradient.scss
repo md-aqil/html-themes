@@ -1,0 +1,74 @@
+.bg_color {
+	 background: linear-gradient(150deg, #DC8EF4, #A463EA);
+	     border-radius: 50%;
+	     --size: 65px;
+	     width: var(--size);
+	     height: var(--size);
+	     display: flex;
+	     align-items: center;
+	     justify-content: center;
+		color: #fff;
+		    text-shadow: 0 1px 8px #00000021;
+		    margin: auto;
+		        box-shadow: 0 7px 10px #0000001a;
+}
+
+.fill_color {
+	background: linear-gradient(150deg, #9C09DB, #1C0FD7);
+	 -webkit-background-clip: text !important;
+	 -webkit-text-fill-color: transparent;
+}
+
+
+.type_1 {
+  background: linear-gradient(150deg, #9C09DB, #1C0FD7);
+ 
+}
+
+.type_2{
+  background: linear-gradient(150deg, #F2C314, #FC3832);
+ 
+}
+
+.type_3 {
+  background: linear-gradient(150deg, #32FBFC, #3214F2);
+ 
+}
+
+.type_4 {
+  background: linear-gradient(150deg, #2576FD, #1E98FE);
+ 
+}
+
+.type_5{
+  background: linear-gradient(150deg, #FF9C51, #FFD46C);
+ 
+}
+
+.type_7 {
+  background: linear-gradient(150deg, #614AFE, #8776FE);
+
+}
+
+.type_9 {
+  background: linear-gradient(150deg, #29C182, #4BEAA4);
+ 
+}
+
+
+.type_6 {
+  background: linear-gradient(150deg, #DC8EF4, #A463EA);
+ 
+}
+
+
+.type_7 {
+  background: linear-gradient(150deg, #A0DDFF, #909AFD);
+ 
+}
+
+
+.type_8 {
+  background: linear-gradient(150deg, #D8D8D8, #15D8B4);
+ 
+}
