@@ -133,10 +133,8 @@ $('#progress-bar').slideUp();
      
 
  var swiper = new Swiper('.swiper-container.swiper-cta', {
-      slidesPerView: 'auto',
-      centeredSlides: true,
-      spaceBetween: 300,
-      speed: 600,
+
+      spaceBetween: 30,
       parallax: true,
        grabCursor: true,
           mousewheel: true,
